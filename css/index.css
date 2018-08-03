@@ -249,3 +249,9 @@ img{
     top: 81px;
     left: 90px;
 }
+
+@media (max-width: 500px){
+    .header-nav{
+        opacity: 1.7;
+    }
+}
