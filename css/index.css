@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	color: #000000;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover, i:hover{
+	cursor: pointer;
+	color: #4fce4f !important;
+}
+
+a:link{
+	color: #4fce4f;
+	text-decoration: none;
+}
+
+img{
+	object-fit: cover;
+}
+
+.green{
+	color: #4fce4f;
+}
+
+.big-text{
+	font-size: 1.1rem;
+	color: gray !important;
+}
+
+.middle-text{
+	font-size: 0.9rem;
+	color: lightgray !important;
+}
+
+.little-text{
+	font-size: 0.6rem;
+	color: gray !important;
+}
+
+.fontBig{
+	font-size: 1.4rem;
+}
+
+/*chart*/
+#playerChart{
+    padding-left: 10px;
+}
+
+/*bu da*/
+#mySideNav{
+	width: 54px;
+}
+
+#mySideNav i:hover,a:hover{
+	color: #000000 !important;
+}
+
+#mySideNav i {
+    color: darkgreen;
+    font-size: 18px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4fce4f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+}
+
+.sidenav a {
+    padding: 18px 8px 5px 18px; 
+    /*bunu deyisdim*/
+    display: block;
+    transition: 0.3s;
+}
+
+
+
+/*.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}*/
+
+.header-nav{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+.header-nav i, .header-nav .nav-link, .header-nav span, .navbar-toggler-icon{
+	color: lightgray;
+}
+
+.header-nav .user-img{
+	background: url("../img/user.png");
+	position: relative;
+	border: 0.5px solid black;
+	border-radius: 18px;
+	display: inline-block;
+	background-repeat: round;
+	width: 35px;
+    height: 35px;
+    float: left;
+    margin-top: -7px;
+}
+
+.header-nav .dropdown-last {
+	position: relative;
+}
+
+.header-nav .user-img div{
+	position: absolute;
+    border: 1px solid red;
+    border-radius: 20px;
+    width: 20px;
+    padding: 0px 5px;
+    height: 22px;
+    background-color: red;
+    color: white;
+    z-index: 1;
+    top: -5px;
+    left: 18px;
+}
+
+.header-nav .search{
+	background-color: gray !important;
+    border-color: gray !important;
+    color: white !important;
+    background: url(images/comment-author.gif) no-repeat scroll 7px 7px;
+	padding-left:30px;
+}
+
+.header-nav .search:focus{
+	border-color: gray;
+}
+
+.header-nav .dropdown-menu .dropdown-item{
+    font-weight: 900 !important;
+}
+
+
+#main {
+    /*transition: margin-left .5s;*/
+    padding: 16px;
+    /*bu da elave*/
+    padding-left: 66px;
+    position: relative;
+}
+
+/*triangle div*/
+.arrow-left{
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+    bottom: 83%;
+    left: 44px;
+    z-index: 999;
+}
+
+/*Main container*/
+
+#dashboard .first{
+	padding-top: 55px;
+}
+
+#dashboard .first .row{
+	margin-top: 15px;
+    margin-left: 3px;
+    margin-bottom: 15px;
+}
+
+#dashboard .first .row>div:nth-child(2n){
+    border-left: 2.2px solid black;
+}
+#dashboard .first .row>div:nth-child(2n-1){
+    border-left: 2.2px solid blue;
+}
+#dashboard .first .row>div:nth-child(3){
+    border-left: 2.2px solid red;
+}
+
+#dashboard .first{
+    margin-top: 15px;
+}
+
+#dashboard .first>div:nth-child(2){
+    background-color: #8080801a;
+    margin-top: 20px;
+}
+
+#dashboard .second{
+    margin-top: 15px;
+}
+
+#dashboard .third{
+    margin-top: 15px;
+}
+
+#dashboard .third img{
+    width: 55px;
+    height: 55px;
+    border: 0.1px solid lightgray;
+    border-radius: 50%;
+}
+
+/*#dashboard .third .carousel-item{
+        display: inline-flex !important;
+}
+*/
+#dashboard .third .carousel-inner{
+    margin-top: 38px;
+    margin-left: 21px;
+}
+
+#dashboard .third .media{
+    margin-bottom: 15px;
+}
+
+#dashboard .third canvas{
+    height: 96px !important;
+    width: 192px !important;
+    margin-top: 48px !important;
+    /*position: relative;*/
+}
+
+#dashboard .third .perc{
+    position: absolute;
+    font-size: 21px;
+    color: #000000c7;
+    top: 81px;
+    left: 90px;
+}

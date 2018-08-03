@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front Task</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- side-navbar -->
+	<div id="mySideNav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn"></a>
+	  <!-- &times; onclick="closeNav()"-->
+	  <a href="#dashboard">
+	  	<i class="fa fa-clock-o" aria-hidden="true"></i>
+	  </a>
+	  <a href="#">
+	  	<i class="fa fa-user" aria-hidden="true"></i>
+	  </a>
+	  <a href="#">
+	  	<i class="fa fa-pencil" aria-hidden="true"></i>
+	  </a>
+	  <a href="#">
+	  	<i class="fa fa-calendar" aria-hidden="true"></i>
+	  </a>
+	  <a href="#">
+	  	<i class="fa fa-file" aria-hidden="true"></i>
+	  </a>	  
+	  <a href="#">
+	  	<i class="fa fa-comments" aria-hidden="true"></i>
+	  </a>
+	  <a href="#">
+	  	<i class="fa fa-bar-chart" aria-hidden="true"></i>
+	  </a>
+	</div>
+	<!-- header -->
+	<div class="header-nav middle-text">
+		<nav class="navbar navbar-expand-lg">
+		  <a class="navbar-brand" href="#">
+		  	<i class="fa fa-eercast"></i>
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">+ Add User<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">User Preferences</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Settings</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+			    <div class="input-group mb-2">
+			        <div class="input-group-prepend">
+			          <div class="input-group-text" style="background-color: gray; border-color: gray;">
+			          	<i class="fa fa-search"></i>
+			          </div>
+			        </div>
+				    <input class="form-control mr-sm-2 search" type="search" aria-label="Search">
+				</div>
+			</form>
+		    <ul class="navbar-nav dropdown-last">
+			    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			          <div class="user-img">
+			          	<div>2</div>
+			          </div>
+			          <span>Aaron Sananez</span>
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item" href="#">Account</a>
+			          <a class="dropdown-item" href="#">Inbox</a>
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item" href="#">Log out</a>
+			        </div>
+			    </li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
+	<!-- main container -->
+	<div id="main" class="container-fluid">
+		<div class="arrow-left"></div>
+		<div id="dashboard">
+			<div class="row first">
+				<div class="col-12 dash-header big-text">
+					<span class="big-text">Dashboard</span>
+					<span>
+						<i class="fa fa-cog" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="col-12">
+					<div class="row">
+						<div class="col-sm-2 col-xs-4">
+							<div class="fontBig">267</div>
+							<div class="middle-text">Online Players</div>
+						</div>
+						<div class="col-sm-2 col-xs-4">
+							<div class="fontBig">1890</div>
+							<div class="middle-text">Hours Played</div>
+						</div>
+						<div class="col-sm-2 col-xs-4">
+							<div class="fontBig">22</div>
+							<div class="middle-text">New Tournaments</div>
+						</div>					
+						<div class="col-sm-2 col-xs-4">
+							<div class="fontBig">16</div>
+							<div class="middle-text">Lifetime Fails</div>
+						</div>	
+						<div class="col-sm-2 col-xs-4">
+							<div class="fontBig">6544</div>
+							<div class="middle-text">Comments</div>
+						</div>	
+						<div class="col-sm-2 col-xs-4">
+							<div class="fontBig">568</div>
+							<div class="middle-text">Games Played</div>
+						</div>	
+					</div>										
+				</div>
+			</div>
+			<div class="row second">
+				<div class="col-sm-6 col-xs-12">
+					<div class="row justify-content-between">
+						<span class="col-md-4 col-xs-6 big-text">Active Players</span>
+						<div class="col-md-4 col-xs-6 form-group">
+					      <select id="inputState" class="form-control little-text">
+					        <option selected>Daily</option>
+					        <option>Monthly</option>
+					        <option>Yearly</option>
+					      </select>
+					    </div>
+					</div>
+					<div class="row">
+						<canvas id="playerChart"></canvas>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="row justify-content-between">
+						<span class="col-md-4 col-xs-6 big-text">Active Tournaments</span>
+						<div class="col-md-4 col-xs-6 form-group">
+					      <select id="inputState" class="form-control little-text">
+					        <option selected>Monthly</option>
+					        <option>Daily</option>
+					        <!-- <option>Yearly</option> -->
+					      </select>
+					    </div>
+					</div>
+					<div class="row">
+						<canvas id="playerChart2"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="row third">
+				<div class="col-sm-6 col-xs-12">
+					<div class="row justify-content-between">
+						<span class="col-md-4 col-xs-6 big-text">Recent Players</span>
+						<span class="col-lg-1 col-md-4 col-xs-6">
+							<a class="carousel-control-prev" href="#slider" data-slide="prev"><i class="fa fa-caret-left"></i></a>
+							<a class="carousel-control-next" href="#slider" data-slide="next"><i class="fa fa-caret-right"></i></a>
+						</span>
+					</div>
+					<div class="row">
+						<div id="slider" class="carousel slide" data-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						    	<div class="row">
+							      <div class="col-sm-4 media">
+								  <img src="./img/1.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/2.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/3.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/4.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/5.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/6.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div> 
+						      <div class="col-sm-4 media">
+								  <img src="./img/7.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/8.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/9.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>   
+						    	</div>
+						    </div>
+						    <div class="carousel-item">
+						    	<div class="row">
+							      <div class="col-sm-4 media">
+								  <img src="./img/1.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/2.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/3.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/4.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/5.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/6.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div> 
+						      <div class="col-sm-4 media">
+								  <img src="./img/7.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/8.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>
+						      <div class="col-sm-4 media">
+								  <img src="./img/9.jpg">
+								  <div class="media-body little-text">
+								    <h5 class="mt-0 middle-text">Daryl Ginn</h5>
+								    United Kingdom
+								  </div>
+							  </div>   
+						    	</div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<div class="row justify-content-between">
+						<span class="col-md-4 col-xs-6 big-text">Recent Players</span>
+					</div>
+					<div class="row">
+								<div class="col-sm-3">
+									<canvas id="doughnut-chart-1"></canvas>
+									<div class="perc">58%</div>
+								</div>						
+								<div class="col-sm-3">
+									<canvas id="doughnut-chart-2"></canvas>
+								</div>						
+								<div class="col-sm-3">
+									<canvas id="doughnut-chart-3"></canvas>
+								</div>						
+								<div class="col-sm-3">
+									<canvas id="doughnut-chart-4"></canvas>
+								</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- <script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="js/line1.js"></script>
+<script src="js/line2.js"></script>
+<script src="js/round.js"></script>
+<!-- <script src="js/round2.js"></script> -->
+<!-- <script src="js/round3.js"></script> -->
+<!-- <script src="js/round4.js"></script> -->
+<script src="js/index.js"></script>
+</body>
+</html>
